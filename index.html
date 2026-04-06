@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 class="">Available Flavours</h1>
+    
+    <div class="row g-3">
+        {% for icecream in icecreams %}
+        <div class="col-md-2">
+            <div class="card mb-2">
+                <div class="card-body text-center bg-light">
+                    <h5 class="card-title">{{ icecream }}</h5>
+                    <p class="card-text">Some description</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
